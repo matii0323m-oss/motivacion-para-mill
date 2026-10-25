@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para mi Mila 🌻</title>
+
+<style>
+:root {
+    --pink: #f6a6bf;
+    --rose: #d94f82;
+    --cream: #fff8f1;
+    --ink: #493344;
+    --gold: #f4c95d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", system-ui, sans-serif;
+    color: var(--ink);
+    background: linear-gradient(145deg, #fff8f1, #ffe8f0 52%, #fff3ce);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    width: min(960px, 92%);
+    margin: auto;
+    padding: 30px 0 55px;
+}
+
+.hero {
+    text-align: center;
+    padding: 48px 22px 36px;
+    border: 1px solid #ffffffb8;
+    border-radius: 30px;
+    background: #ffffffa8;
+    box-shadow: 0 18px 55px #b34e7b18;
+    overflow: hidden;
+}
+
+.sunflower {
+    font-size: 3.3rem;
+    animation: float 3s ease-in-out infinite;
+    display: inline-block;
+}
+
+h1 {
+    font-size: clamp(2.1rem, 6vw, 4rem);
+    line-height: 1.05;
+    margin: 14px 0;
+    color: #b83f70;
+}
+
+.subtitle {
+    font-size: 1.08rem;
+    max-width: 620px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 9px 15px;
+    border-radius: 99px;
+    background: #fff0b8;
+    font-weight: bold;
+    color: #81591a;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #ffffffc9;
+    border: 1px solid white;
+    border-radius: 23px;
+    padding: 23px;
+    box-shadow: 0 12px 30px #b34e7b12;
+}
+
+.card h2 {
+    margin: 0 0 12px;
+    color: #b83f70;
+    font-size: 1.25rem;
+}
+
+.card p {
+    line-height: 1.8;
+    margin: 0;
+}
+
+.quote {
+    font-size: 1.12rem;
+    font-weight: bold;
+    line-height: 1.7;
+    text-align: center;
+}
+
+button {
+    border: none;
+    border-radius: 99px;
+    padding: 13px 18px;
+    background: #c7477a;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 7px 16px #c7477a28;
+    transition: transform .2s, filter .2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+}
+
+button:focus-visible {
+    outline: 3px solid #f4c95d;
+    outline-offset: 3px;
+}
+
+.secondary {
+    background: #fff0b8;
+    color: #704a19;
+    box-shadow: none;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+#message {
+    min-height: 3.2em;
+    margin-top: 15px !important;
+    color: #a83267;
+}
+
+.steps {
+    display: grid;
+    gap: 14px;
+    margin-top: 15px;
+}
+
+.step {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    line-height: 1.6;
+}
+
+.step span {
+    font-size: 1.35rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 28px 12px 0;
+    line-height: 1.9;
+}
+
+.heart {
+    color: #d94f82;
+    display: inline-block;
+    animation: pulse 1.4s infinite;
+}
+
+.floating {
+    position: fixed;
+    pointer-events: none;
+    opacity: .55;
+    animation: drift 9s linear infinite;
+    z-index: -1;
+}
+
+@keyframes float {
+    50% { transform: translateY(-8px) rotate(3deg); }
+}
+
+@keyframes pulse {
+    50% { transform: scale(1.25); }
+}
+
+@keyframes drift {
+    from { transform: translateY(105vh) rotate(0deg); }
+    to { transform: translateY(-15vh) rotate(360deg); }
+}
+
+@media(max-width: 650px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 35px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
+
+@media(prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="floating" style="left:7%;font-size:24px;animation-delay:-2s">♡</div>
+<div class="floating" style="left:87%;font-size:28px;animation-delay:-6s">🌼</div>
+<div class="floating" style="left:48%;font-size:20px;animation-delay:-4s">✨</div>
+
+<main>
+
+    <section class="hero">
+        <div class="sunflower">🌻</div>
+
+        <h1>
+            Mi Mila, tú puedes<br>
+            con esto y mucho más
+        </h1>
+
+        <p class="subtitle">
+            Recuerda que eres una chica muy brillante.
+            Este momento que estás pasando es solo un mal momento...
+            Todo mejorará y vas a poder seguir con tu sueño de ser
+            una increíble cirujana ,Tu familia y yo estamos
+            orgullosos de la persona que eres y en la que te convertirás.
+            🩷
+        </p>
+
+        <div class="tag">
+            Un pasito a la vez, mi niñita ✨
+        </div>
+    </section>
+
+    <section class="grid">
+
+        <article class="card">
+            <h2>💌 Un paso a la vez</h2>
+
+            <p class="quote">
+                Si te sientes abrumada , lo mejor es que despejes tu mente :D
+                y dejar el estudio para otro momento.
+            </p>
+
+            <div class="actions">
+                <button id="surpriseBtn">
+                    Necesito un mensajito 💗
+                </button>
+            </div>
+
+            <p id="message" class="quote" aria-live="polite"></p>
+        </article>
+
+        <article class="card">
+            <h2>⭐ Recurdaaa</h2>
+
+            <p>Hay unas cosas que no debes olvidar:3 </p>
+
+            <div class="steps">
+                <div class="step">
+                    <span>💗</span>
+                    <div>
+                        <strong>1. Siempre tendras personas que estaran contigo</strong><br>
+                        Yo y todos los miembros de tu familia estaremos para ti en todo momento 
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span>🌻</span>
+                    <div>
+                        <strong>2. Eres capaz de todo lo que te propongas</strong><br>
+                        Tranquila..un paso a la vez,tu podras hacer todo lo que sueñas pues eres muy capaz de cumplir tus sueños por tu propia cuenta.
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span>🌷</span>
+                    <div>
+                        <strong>3. No todo es estudiar:D</strong><br>
+                        Puedes darte un respiro despues de haber estudiado ya mucho tiempo... relajarte a tu modo, viendo pelicula o algo que te guste.
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span>⭐</span>
+                    <div>
+                        <strong>4. Te amo mi vida</strong><br>
+                        te amo con todo mi corazon mi vida ,mi corazon te pertenece.
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <h2> 💗Quiero que recuerdes</h2>
+
+            <p>
+                Con cada paso que des estaras mas cerca de cumplir tus objetivos y alcanzar tu sueño ...:D solo no te des por vencida,aun cuando las cosas se pongan dificiles ,todo pasara amor solo mantente firme y con la frente en alto ademas de confiar en ti y tus habilidades.
+            </p>
+        </article>
+
+        <article class="card">
+            <h2>🫶 De tu persona favorita</h2>
+
+            <p>
+                Mi princesa hermosa ,incluso en los dias en que dudes de ti ,para mi siempre seras la chica mas inteligente de todo el mundo , lo unico que deseo es poder verte crecer ,cumplir tus sueños y acompañarte en todo ese camino estando a tu lado , te amo mi mill💗.
+            </p>
+        </article>
+
+    </section>
+
+    <section class="card" style="margin-top:20px;text-align:center">
+        <h2>🌻 Una cosa más...</h2>
+
+        <p class="quote">
+           Aunque se pongan las cosas dificiles,no dudes jamas de ti ... eres muy capaz, querer es poder y tu vas a lograr todo lo que desees
+        </p>
+
+        <div class="actions">
+            <button class="secondary" id="affirmBtn">
+                Dame una afirmación ✨
+            </button>
+
+            <button id="heartBtn">
+                mensajito bonito 💖
+            </button>
+        </div>
+
+        <p id="affirmation" aria-live="polite"
+           style="margin-top:15px;line-height:1.7;font-weight:bold">
+        </p>
+    </section>
+
+    <footer class="footer">
+        Hecha con mucho amor, para mi Mila, mi reina y mi niñita. 🌻
+        <br>
+        Pase lo que pase y estoy seguro que pasaras de ciclo y el curso que mas dificil lo ves muy pronto sencillo lo veras, recuerda que no estás sola, mientras yo este aqui :D.
+        <br>
+        <span class="heart">♥</span>
+        Te ama tu mat
+        <span class="heart">♥</span>
+    </footer>
+
+</main>
+
+<script>
+const messages = [
+    "Tu puedes mi amor eres mas que una chica hermosa tambien eres super inteligente y muy capaz de todo lo que te propongas. 🌻"
+];
+
+const affirmations = [
+    "Milagros eres una chica muy inteligente, brillante, hermosa, linda, bella, guapa, preciosa",
+    
+];
+
+function randomItem(array) {
+    return array[Math.floor(Math.random() * array.length)];
+}
+
+document.getElementById("surpriseBtn").addEventListener("click", () => {
+    document.getElementById("message").textContent = randomItem(messages);
+});
+
+document.getElementById("affirmBtn").addEventListener("click", () => {
+    document.getElementById("affirmation").textContent = randomItem(affirmations);
+});
+
+document.getElementById("heartBtn").addEventListener("click", () => {
+    document.getElementById("heartBtn").textContent =
+        "¡Un abrazo enorme para ti! 💞";
+
+    document.getElementById("affirmation").textContent =
+        "Te amo mi amor , yo estare aqui para ti todo el tiempo diciendote: " +
+        "«Tú puedes, mi amor. aqui alguien te ama con todo su corazon :D». 💗";
+});
+</script>
+
+</body>
+</html>
+
